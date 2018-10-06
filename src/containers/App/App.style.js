@@ -8,10 +8,9 @@ export const Background = styled.div`
     top: 10vh
     height:80vh
     background-image: url('${require('../../assets/doubleliftface.png')}');
-    background-color:${yellow}
     background-repeat:no-repeat
     background-position: center
     z-index:-99
-    opacity: 0.75
+    opacity: 0.4
 
 `

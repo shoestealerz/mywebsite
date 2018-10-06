@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-
+import {yellow} from '../../theme/variables'
 export const Image = styled.img`
     width: 50%;
 `;
@@ -66,4 +66,18 @@ export const RevealP = styled.p`
         transform: rotateY(0deg);
     }
     `}
+`
+
+export const Background = styled.div`
+    position: fixed
+    left: 10vw
+    width: 80vw
+    top: 10vh
+    height:80vh
+    background-color:${yellow}
+    background-repeat:no-repeat
+    background-position: center
+    z-index:-99
+    opacity: 0.4
+
 `

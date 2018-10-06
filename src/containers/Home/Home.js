@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import logo from '../../assets/tenor.gif'
 import {Container} from '../../theme/grid'
-import Terminal from './Terminal'
+import {yellow} from '../../theme/variables'
+
 
 import {
   Image,
   HeroImage,
-  RevealP
+  RevealP,
+  Background
 } from './Home.style'
 import WhenInView from '../../components/WhenInView'
 import {Link} from 'react-router-dom'
@@ -14,7 +16,7 @@ import {Link} from 'react-router-dom'
 export default class Home extends Component {
   render() {
     return (
-    <div>
+    <div style = {{backgroundColor: yellow}}>
       
 
 
@@ -22,28 +24,33 @@ export default class Home extends Component {
         <Container>
            
           <HeroImage>
-            <h1>Michael "Doublelift" Han</h1>
+            <h1>Michael  Han</h1>
             <h1>2B ECE at University of Waterloo</h1>
           </HeroImage>
           
           
           {/* <Image src={logo} alt ="tenor.image" /> */}
-          
+          <br/>
           <WhenInView>
             {({isInView}) =>          
-              <RevealP hide={!isInView}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit mauris eget metus pellentesque, et vestibulum neque pulvinar. Aenean posuere sem vehicula risus elementum, a venenatis mauris mollis. Vivamus rhoncus congue lectus, vel mollis metus pulvinar et. Sed sit amet nibh eu lacus condimentum volutpat ac sit amet arcu. Aenean ultrices maximus felis eget commodo. Sed convallis dolor lectus, convallis facilisis eros interdum in. Ut quam lorem, tincidunt nec molestie et, pharetra ut neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              <a hide={!isInView}>
+              I am a University of Waterloo student studying Electrical Engineering in 2B. I am interested in developing a wide range of skills in diverse fields that would complement each other in unexpected ways. So I engrained this idea to my lifestyle, and created a goal of learning one new thing in depth every trimester. Currently I am most experienced in C++ and Java, and have worked on web applications during my internship at Toronto Water. 
 
-              Cras sit amet libero vitae nibh viverra gravida at non velit. Integer porta eu felis nec vestibulum. Suspendisse nec mauris sit amet sem efficitur auctor id eu dolor. Sed diam arcu, mollis egestas viverra eu, finibus id arcu. Proin mattis eget felis vel mattis. In placerat aliquam augue, in euismod magna malesuada eget. Ut cursus nisl vestibulum lectus sollicitudin, sed lobortis massa dapibus. Aliquam auctor arcu et libero efficitur pellentesque. Nunc a feugiat dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-              </RevealP>
+              
+              </a>
               
             }  
           </WhenInView>
 
 
-          <h1><Link to="/projects">Projects</Link></h1>
+          {/* <h1><Link to="/projects">Projects</Link></h1>
           <h1><Link to="/resume">Resume</Link></h1>
-          
+          <h1><Link to="/about">About</Link></h1> */}
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
         </Container>
       </div>
     </div> 

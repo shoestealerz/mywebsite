@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import {Background} from './App.style'
+import Navbar from '../../components/Navbar/Navbar'
 
 class App extends Component {
   render() {
     return (
-    
+      <div>
         <Background/>
-        
-      
+        <Navbar/>
+      </div>
     );
   }
 }
